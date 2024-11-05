@@ -57,16 +57,16 @@ const default_config = {
             icon_color: "#f7768e",
           },
           {
-            name: "linuxdo",
-            url: "https://linux.do/new",
-            icon: "brand-debian",
-            icon_color: "#ff9e64",
-          },
-          {
             name: "ns",
             url: "https://www.nodeseek.com/?sortBy=postTime",
             icon: "server-2",
             icon_color: "#73daca",
+          },
+          {
+            name: "linuxdo",
+            url: "https://linux.do/new",
+            icon: "brand-debian",
+            icon_color: "#ff9e64",
           },
           {
             name: "v2ex",
