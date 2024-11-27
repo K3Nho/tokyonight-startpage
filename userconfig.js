@@ -34,7 +34,7 @@ const default_config = {
     "q": "config-tab",
   },
   disabled: [],
-  fastlink: "https://shared.oaifree.com/?temporary-chat=true",
+  fastlink: "",
   openLastVisitedTab: true,
   tabs: [
     {
@@ -104,16 +104,10 @@ const default_config = {
             icon_color: "#73daca",
           },
           {
-            name: "lmsys",
+            name: "gpt",
             url: "https://chat.lmsys.org/?leaderboard",
             icon: "brand-twitch",
             icon_color: "#7aa2f7",
-          },
-          {
-            name: "gpt",
-            url: "https://shared.oaifree.com/?temporary-chat=true",
-            icon: "brand-openai",
-            icon_color: "#bb9af7",
           },
         ],
       },
