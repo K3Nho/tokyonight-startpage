@@ -127,12 +127,6 @@ const default_config = {
             icon_color: "#ff9e64",
           },
           {
-            name: "mexc",
-            url: "https://www.mexc.com/zh-CN/assets/spot",
-            icon: "coin-monero",
-            icon_color: "#7aa2f7",
-          },
-          {
             name: "okx",
             url: "https://www.okx.com/zh-hans/balance/funding",
             icon: "currency-ethereum",
