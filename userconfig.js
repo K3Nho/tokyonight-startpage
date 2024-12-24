@@ -116,7 +116,7 @@ const default_config = {
             links: [
           {
             name: "coinmarketcap",
-            url: "https://coinmarketcap.com/zh/watchlist/",
+            url: "https://coinmarketcap.com/zh",
             icon: "brand-coinbase",
             icon_color: "#7dcfff",
           },
