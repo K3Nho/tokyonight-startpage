@@ -320,7 +320,8 @@ class Tabs extends Component {
           font-weight: 600;
           letter-spacing: 1px;
           text-transform: uppercase;
-          font-family: 'Raleway', sans-serif;
+          font: 700 14px JetBrainsMono Nerd Font;
+          src: url(../fonts/jetbrains-mono.ttf);
           transition: all 0.3s ease;
       }
 
