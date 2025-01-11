@@ -270,34 +270,7 @@ class Tabs extends Component {
         text-shadow: 0 0 5px var(--flavour);
       }
 
-      .categories ul::after {
-          content: attr(class);
-          position: absolute;
-          display: flex;
-          text-transform: uppercase;
-          overflow-wrap: break-word;
-          width: 15px;
-          height: 150px;
-          padding: 1em;
-          margin: auto;
-          margin-left: 20px;
-          border-radius: 10px;
-          box-shadow: inset 0 0 0 2px var(--flavour);
-          left: calc(15% - 42.5px);
-          bottom: 0;
-          top: 0;
-          background: linear-gradient(to top, rgba(50, 48, 47, 0.9), transparent);
-          color: var(--flavour);
-          letter-spacing: 1px;
-          font: 700 24px JetBrainsMono Nerd Font;
-          src: url(../fonts/jetbrains-mono.ttf);
-          text-align: center;
-          flex-wrap: wrap;
-          word-break: break-all;
-          align-items: center;
-          backdrop-filter: blur(3px);
-          transition: all 0.3s ease;
-      }
+
 
       .categories ul:hover::after {
           transform: scale(1.05);
