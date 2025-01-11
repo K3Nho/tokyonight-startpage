@@ -9,14 +9,15 @@ class Clock extends Component {
   }
 
   imports() {
-    return [this.resources.icons.material, this.resources.fonts.roboto];
+    return [this.resources.icons.material];
   }
 
   style() {
     return `
         .clock-time {
             white-space: nowrap;
-            font: 300 9pt 'Roboto', sans-serif;
+            font: 300 9pt JetBrainsMono Nerd Font;
+            src: url(../fonts/jetbrains-mono.ttf);
             color: #cdd6f4;
             letter-spacing: .5px;
         }
