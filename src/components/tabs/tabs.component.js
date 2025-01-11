@@ -291,7 +291,8 @@ class Tabs extends Component {
           background: linear-gradient(to top, rgba(50, 48, 47, 0.9), transparent);
           color: var(--flavour);
           letter-spacing: 1px;
-          font: 500 30px 'Nunito', sans-serif;
+          font: 700 24px JetBrainsMono Nerd Font;
+          src: url(../fonts/jetbrains-mono.ttf);
           text-align: center;
           flex-wrap: wrap;
           word-break: break-all;
