@@ -86,7 +86,7 @@ class Tabs extends Component {
   style() {
     return `
       status-bar {
-          bottom: -70px;
+          bottom: -50px;
           height: 32px;
           background: #1e1e2e;
           border-radius: 4px;
