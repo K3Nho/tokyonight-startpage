@@ -234,7 +234,8 @@ class Tabs extends Component {
 .categories ul .links a {
   color: #cdd6f4;
   text-decoration: none;
-  font: 700 18px 'Roboto', sans-serif;
+  font: 700 18px JetBrainsMono Nerd Font;
+  src: url(../fonts/jetbrains-mono.ttf);
   transition: all .2s;
   display: inline-flex;
   align-items: center;
