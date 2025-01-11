@@ -276,8 +276,8 @@ class Tabs extends Component {
           display: flex;
           text-transform: uppercase;
           overflow-wrap: break-word;
-          width: 20px;
-          height: 200px;
+          width: 15px;
+          height: 150px;
           padding: 1em;
           margin: auto;
           margin-left: 20px;
