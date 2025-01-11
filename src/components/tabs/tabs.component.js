@@ -241,7 +241,7 @@ class Tabs extends Component {
   padding: .4em .7em;
   background: rgba(24, 24, 37, 0.8);
   box-shadow: 0 4px rgba(24, 24, 37, 0.5), 0 5px 10px rgb(0 0 0 / 20%);
-  border-radius: 2px;
+  border-radius: 10px;
   margin-bottom: .7em;
   backdrop-filter: blur(3px);
 }
