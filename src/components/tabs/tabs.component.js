@@ -199,10 +199,13 @@ class Tabs extends Component {
     -webkit-backdrop-filter: blur(10px); /* For Safari support */
     padding: 5%;
     flex-wrap: wrap;
-    overflow-y: auto;
-    scrollbar-width: thin;
-    scrollbar-color: var(--flavour) #1e1e2e;
-    transition: background 0.3s ease;
+    overflow-y: hidden; /* 将 overflow-y 从 auto 改为 hidden */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+
+.categories .links::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
 }
 
 @keyframes flowingGradient {
