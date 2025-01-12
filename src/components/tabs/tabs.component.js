@@ -182,32 +182,6 @@ class Tabs extends Component {
           z-index: 1;
       }
 
-.categories .links {
-    right: 0;
-    width: 70%;
-    height: 100%;
-    background: linear-gradient(
-        135deg,
-        rgba(29, 1, 59, 1) 0%,
-        rgba(42, 38, 75, 1) 33%,
-        rgba(72, 69, 163, 1) 66%,
-        rgba(29, 1, 59, 1) 100%
-    );
-    background-size: 400% 400%;
-    animation: flowingGradient 15s ease infinite;
-    backdrop-filter: blur(50px);
-    -webkit-backdrop-filter: blur(10px); /* For Safari support */
-    padding: 5%;
-    flex-wrap: wrap;
-    overflow-y: auto;
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none;  /* Internet Explorer 10+ */
-}
-
-.categories .links::-webkit-scrollbar {
-    display: none; /* Safari and Chrome */
-}
-
 @keyframes flowingGradient {
     0% {
         background-position: 0% 50%;
