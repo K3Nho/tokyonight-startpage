@@ -134,7 +134,7 @@ class Tabs extends Component {
           --panelbg: transparent;
           --flavour: var(--accent);
           width: 100%;
-          height: 100%;
+          height: 107%;
           right: 100%;
           background: #1e1e2e url("../img/bg-1.gif") no-repeat left;
           background-size: cover;
