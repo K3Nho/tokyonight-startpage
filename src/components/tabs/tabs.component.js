@@ -109,7 +109,7 @@ class Tabs extends Component {
           height: 450px;
           right: 0;
           left: 0;
-          top: -5px;
+          top: -5;
           bottom: 0;
           margin: auto;
           box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
