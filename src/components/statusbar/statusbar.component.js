@@ -61,18 +61,7 @@ class Statusbar extends Component {
           justify-content: center;
       }
 
-      #tabs ul li:not(:last-child) {
-          width: 35px;
-          text-align: center;
-          font: 700 14px JetBrainsMono Nerd Font;
-          src: url(../fonts/jetbrains-mono.ttf);
-          color: rgba(205, 214, 244, 0.5);
-          padding: 6px 0;
-          transition: all .1s;
-          cursor: pointer;
-          line-height: 0;
-          height: 100%;
-      }
+
 
       #tabs ul li:not(:last-child):hover {
           background: #181825;
