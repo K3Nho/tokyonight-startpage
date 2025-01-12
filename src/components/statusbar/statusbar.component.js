@@ -1,25 +1,10 @@
 class Statusbar extends Component {
-  externalRefs = {};
-
   refs = {
-    categories: ".categories ul",
-    tabs: "#tabs ul li",
-    indicator: ".indicator",
     fastlink: ".fastlink",
   };
 
-  currentTabIndex = 0;
-
   constructor() {
     super();
-
-    this.setDependencies();
-  }
-
-  setDependencies() {
-    this.externalRefs = {
-      categories: this.parentNode.querySelectorAll(this.refs.categories),
-    };
   }
 
   imports() {
@@ -31,8 +16,7 @@ class Statusbar extends Component {
       *:not(:defined) { display: none; }
 
       #tabs,
-      #tabs .widgets,
-      #tabs ul li:last-child {
+      #tabs .widgets {
           position: absolute;
       }
 
@@ -120,7 +104,6 @@ class Statusbar extends Component {
                 <button class="+ fastlink">
                   <img class="fastlink-icon" src="src/img/logo.png"/>
                 </button>
-                <ul class="- indicator"></ul>
                 <div class="+ widgets col-end">
                     <current-time class="+ widget"></current-time>
                     <weather-forecast class="+ widget weather"></weather-forecast>
@@ -130,94 +113,17 @@ class Statusbar extends Component {
   }
 
   setEvents() {
-    this.refs.tabs.forEach((tab) => (tab.onclick = ({ target }) => this.handleTabChange(target)));
-
-    document.onkeydown = (e) => this.handleKeyPress(e);
-    document.onwheel = (e) => this.handleWheelScroll(e);
     this.refs.fastlink.onclick = () => {
       console.log(CONFIG.fastlink);
       if (CONFIG.config.fastlink) {
         window.location.href = CONFIG.config.fastlink;
       }
     };
-
-    if (CONFIG.openLastVisitedTab) {
-      window.onbeforeunload = () => this.saveCurrentTab();
-    }
-  }
-
-  saveCurrentTab() {
-    localStorage.lastVisitedTab = this.currentTabIndex;
-  }
-
-  openLastVisitedTab() {
-    if (!CONFIG.openLastVisitedTab) return;
-    this.activateByKey(localStorage.lastVisitedTab);
-  }
-
-  handleTabChange(tab) {
-    this.activateByKey(Number(tab.getAttribute("tab-index")));
-  }
-
-  handleWheelScroll(event) {
-    if (!event) return;
-
-    let { target, wheelDelta } = event;
-
-    if (target.shadow && target.shadow.activeElement) return;
-
-    let activeTab = -1;
-    this.refs.tabs.forEach((tab, index) => {
-      if (tab.getAttribute("active") === "") {
-        activeTab = index;
-      }
-    });
-
-    if (wheelDelta > 0) {
-      this.activateByKey((activeTab + 1) % (this.refs.tabs.length - 1));
-    } else {
-      this.activateByKey(activeTab - 1 < 0 ? this.refs.tabs.length - 2 : activeTab - 1);
-    }
-  }
-
-  handleKeyPress(event) {
-    if (!event) return;
-
-    let { target, key } = event;
-
-    if (target.shadow && target.shadow.activeElement) return;
-
-    if (Number.isInteger(parseInt(key)) && key <= this.externalRefs.categories.length) {
-      this.activateByKey(key - 1);
-    }
-  }
-
-  activateByKey(key) {
-    if (key < 0) return;
-    this.currentTabIndex = key;
-
-    this.activate(this.refs.tabs, this.refs.tabs[key]);
-    this.activate(this.externalRefs.categories, this.externalRefs.categories[key]);
-  }
-
-  createTabs() {
-    const categoriesCount = this.externalRefs.categories.length;
-
-    for (let i = 0; i <= categoriesCount; i++) {
-      this.refs.indicator.innerHTML += `<li tab-index=${i} ${i == 0 ? "active" : ""}></li>`;
-    }
-  }
-
-  activate(target, item) {
-    target.forEach((i) => i.removeAttribute("active"));
-    item.setAttribute("active", "");
   }
 
   connectedCallback() {
     this.render().then(() => {
-      this.createTabs();
       this.setEvents();
-      this.openLastVisitedTab();
     });
   }
 }
