@@ -86,7 +86,7 @@ class Tabs extends Component {
   style() {
     return `
       status-bar {
-          bottom: -65px;
+          bottom: -70px;
           height: 32px;
           background: #1e1e2e;
           border-radius: 4px;
@@ -134,7 +134,7 @@ class Tabs extends Component {
           --panelbg: transparent;
           --flavour: var(--accent);
           width: 100%;
-          height: 107%;
+          height: 100%;
           right: 100%;
           background: #1e1e2e url("../img/bg-1.gif") no-repeat left;
           background-size: cover;
