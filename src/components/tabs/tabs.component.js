@@ -200,7 +200,7 @@ class Tabs extends Component {
     padding: 5%;
     flex-wrap: wrap;
     overflow-y: hidden;
-    scrollbar-width: thin;
+    scrollbar-width: none;
     scrollbar-color: var(--flavour) #1e1e2e;
     transition: background 0.3s ease;
 }
@@ -218,7 +218,7 @@ class Tabs extends Component {
 }
 
       .categories .links::-webkit-scrollbar {
-          width: 6px;
+          display: none;
       }
 
       .categories .links::-webkit-scrollbar-thumb {
