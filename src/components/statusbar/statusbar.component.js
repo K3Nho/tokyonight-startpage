@@ -49,12 +49,6 @@ class Statusbar extends Component {
           margin-left: 1em;
       }
 
-
-      
-      #tabs ul li:not(:last-child):hover {
-          background: #181825;
-      }
-
       #tabs ul li:last-child {
           --flavour: var(--accent);
           width: 35px;
