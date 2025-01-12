@@ -180,6 +180,14 @@ class Statusbar extends Component {
     }
   }
 
+  createTabs() {
+    const categoriesCount = this.externalRefs.categories.length;
+
+    for (let i = 0; i <= categoriesCount; i++) {
+      this.refs.indicator.innerHTML += `<li tab-index=${i} ${i == 0 ? "active" : ""}></li>`;
+    }
+  }
+  
   handleKeyPress(event) {
     if (!event) return;
 
