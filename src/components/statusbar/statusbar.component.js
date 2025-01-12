@@ -49,15 +49,6 @@ class Statusbar extends Component {
           margin-left: 1em;
       }
 
-      #tabs ul li:last-child {
-          --flavour: var(--accent);
-          width: 35px;
-          height: 3px;
-          background: var(--flavour);
-          bottom: 0;
-          transition: all .3s;
-      }
-
       #tabs ul li[active]:not(:last-child) {
           color: #cdd6f4;
           font-size: 13px;
