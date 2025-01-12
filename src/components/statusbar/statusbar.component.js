@@ -41,14 +41,6 @@ class Statusbar extends Component {
           height: 100%;
       }
 
-      #tabs ul {
-      counter-reset: tabs;
-      height: 100%;
-      position: relative;
-      list-style: none;
-      margin-left: 1em;
-      }
-
       .widgets {
           right: 0;
           margin: auto;
