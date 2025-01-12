@@ -3,6 +3,8 @@ class Statusbar extends Component {
 
   refs = {
     categories: ".categories ul",
+    tabs: "#tabs ul li",
+    indicator: ".indicator",
     fastlink: ".fastlink",
   };
 
@@ -21,7 +23,7 @@ class Statusbar extends Component {
   }
 
   imports() {
-    return [this.resources.icons.material, this.resources.libs.awoo];
+    return [this.resources.fonts.roboto, this.resources.icons.material, this.resources.libs.awoo];
   }
 
   style() {
@@ -118,6 +120,7 @@ class Statusbar extends Component {
                 <button class="+ fastlink">
                   <img class="fastlink-icon" src="src/img/logo.png"/>
                 </button>
+                <ul class="- indicator"></ul>
                 <div class="+ widgets col-end">
                     <current-time class="+ widget"></current-time>
                     <weather-forecast class="+ widget weather"></weather-forecast>
