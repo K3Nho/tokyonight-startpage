@@ -120,7 +120,6 @@ class Statusbar extends Component {
                 <button class="+ fastlink">
                   <img class="fastlink-icon" src="src/img/logo.png"/>
                 </button>
-                <ul class="- indicator"></ul>
                 <div class="+ widgets col-end">
                     <current-time class="+ widget"></current-time>
                     <weather-forecast class="+ widget weather"></weather-forecast>
