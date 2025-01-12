@@ -202,8 +202,6 @@ class Tabs extends Component {
     overflow-y: hidden;
     scrollbar-width: none;
     transition: background 0.3s ease;
-    justify-content: center; /* 水平居中 */
-    align-items: center; /* 垂直居中 */
 }
 
 @keyframes flowingGradient {
