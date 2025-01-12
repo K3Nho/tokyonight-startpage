@@ -200,14 +200,6 @@ class Statusbar extends Component {
     this.activate(this.externalRefs.categories, this.externalRefs.categories[key]);
   }
 
-  createTabs() {
-    const categoriesCount = this.externalRefs.categories.length;
-
-    for (let i = 0; i <= categoriesCount; i++) {
-      this.refs.indicator.innerHTML += `<li tab-index=${i} ${i == 0 ? "active" : ""}></li>`;
-    }
-  }
-
   activate(target, item) {
     target.forEach((i) => i.removeAttribute("active"));
     item.setAttribute("active", "");
