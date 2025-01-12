@@ -3,7 +3,6 @@ class Statusbar extends Component {
 
   refs = {
     categories: ".categories ul",
-    tabs: "",
     indicator: ".indicator",
     fastlink: ".fastlink",
   };
