@@ -201,7 +201,6 @@ class Tabs extends Component {
     flex-wrap: wrap;
     overflow-y: hidden;
     scrollbar-width: none;
-    scrollbar-color: var(--flavour) #1e1e2e;
     transition: background 0.3s ease;
 }
 
