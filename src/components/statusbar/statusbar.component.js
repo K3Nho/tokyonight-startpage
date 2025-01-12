@@ -50,7 +50,8 @@ class Statusbar extends Component {
       }
 
       #tabs ul li:not(:last-child)::after {
-          content: counter(tabs, cjk-ideographic);
+          font: 700 14px JetBrainsMono Nerd Font;
+          src: url(../fonts/jetbrains-mono.ttf);
           counter-increment: tabs;
           display: flex;
           width: 100%;
@@ -64,9 +65,8 @@ class Statusbar extends Component {
       #tabs ul li:not(:last-child) {
           width: 35px;
           text-align: center;
-          font: 700 14px JetBrainsMono Nerd Font;
-          src: url(../fonts/jetbrains-mono.ttf);
-          color: ${CONFIG.palette.overlay0};
+          font: 700 13px 'Yu Gothic', serif;
+          color: rgba(205, 214, 244, 0.5);
           padding: 6px 0;
           transition: all .1s;
           cursor: pointer;
