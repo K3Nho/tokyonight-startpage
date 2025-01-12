@@ -61,8 +61,6 @@ class Statusbar extends Component {
           justify-content: center;
       }
 
-
-
       #tabs ul li:not(:last-child):hover {
           background: #181825;
       }
@@ -76,11 +74,7 @@ class Statusbar extends Component {
           transition: all .3s;
       }
 
-      #tabs ul li[active]:not(:last-child) {
-          color: #cdd6f4;
-          font-size: 13px;
-          padding: 6px 0;
-      }
+
 
       #tabs ul li[active]:nth-child(2) ~ li:last-child { margin: 0 0 0 35px; }
       #tabs ul li[active]:nth-child(3) ~ li:last-child { margin: 0 0 0 70px; }
@@ -107,7 +101,7 @@ class Statusbar extends Component {
           right: 0;
           margin: auto;
           height: 32px;
-          color: #fff;
+          : #fff;
           font-size: 12px;
       }
 
