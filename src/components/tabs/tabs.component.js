@@ -173,9 +173,7 @@ class Tabs extends Component {
           --flavour: #f5c2e7;
       }
 
-      .categories ul .links {
-          box-shadow: inset -1px 0 var(--flavour);
-      }
+
 
       .categories ul[active] {
           right: 0;
