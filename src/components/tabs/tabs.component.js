@@ -173,8 +173,6 @@ class Tabs extends Component {
           --flavour: #f5c2e7;
       }
 
-
-
       .categories ul[active] {
           right: 0;
           z-index: 1;
@@ -267,10 +265,7 @@ class Tabs extends Component {
         text-shadow: 0 0 5px var(--flavour);
       }
 
-      .categories ul:hover::after {
-          transform: scale(1.05);
-          box-shadow: inset 0 0 0 2px var(--flavour), 0 0 10px var(--flavour);
-      }
+
 
       .categories .links li:not(:last-child) {
           box-shadow: 0 1px 0 rgba(205, 214, 244, .25);
