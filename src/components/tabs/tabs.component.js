@@ -265,8 +265,6 @@ class Tabs extends Component {
         text-shadow: 0 0 5px var(--flavour);
       }
 
-
-
       .categories .links li:not(:last-child) {
           box-shadow: 0 1px 0 rgba(205, 214, 244, .25);
           padding: 0 0 .5em 0;
