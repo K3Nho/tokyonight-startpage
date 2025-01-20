@@ -58,7 +58,7 @@ const default_config = {
             name: "ns",
             url: "https://www.nodeseek.com/?sortBy=postTime",
             icon: "server-2",
-            icon_color: "#7dcfff",
+            icon_color: "#73daca",
           },
           {
             name: "linuxdo",
