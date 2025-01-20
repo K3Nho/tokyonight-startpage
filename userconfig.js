@@ -52,7 +52,7 @@ const default_config = {
             name: "𝕩",
             url: "https://x.com",
             icon: "brand-x",
-            icon_color: "#7dcfff",
+            icon_color: "#7aa2f7",
           },
           {
             name: "ns",
