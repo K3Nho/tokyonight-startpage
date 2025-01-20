@@ -1,8 +1,8 @@
-class Links extends Component {
+class Links {
   static getIcon(link) {
     const defaultColor = "#1e1e2e";
     return link.icon
-      ? `<i class="ti ti-${link.icon} link-icon" style="color: ${link.icon_color ?? defaultColor}"></i>`
+      ? `<i class="ti ti-${link.icon} link-icon" style="color: ${link.icon_color || defaultColor}"></i>`
       : "";
   }
 
@@ -16,24 +16,23 @@ class Links extends Component {
             ${links
               .map(
                 (link, index) => `
-                  <div class="link-info" style="animation-delay: ${index * 0.1}s;">
-                    <a href="${link.url}" target="_blank">
-                      ${Links.getIcon(link)}
-                      ${link.name ? `<p class="link-name">${link.name}</p>` : ""}
-                    </a>
-                  </div>`
+                <div class="link-info" style="animation-delay: ${index * 0.1}s;">
+                  <a href="${link.url}" target="_blank">
+                    ${Links.getIcon(link)}
+                    ${link.name ? `<p class="link-name">${link.name}</p>` : ""}
+                  </a>
+                </div>`
               )
               .join("")}
           </div>
-        </li>`
-      )
+        </li>`)
       .join("");
   }
 }
 
-class Category extends Component {
+class Category {
   static getBackgroundStyle(url) {
-    return `style="background-image: url(${url}); background-repeat: no-repeat;background-size: cover;"`;
+    return `style="background-image: url(${url}); background-repeat: no-repeat; background-size: cover;"`;
   }
 
   static getAll(tabs) {
@@ -47,43 +46,46 @@ class Category extends Component {
   }
 }
 
-class Tabs extends Component {
+class Tabs {
   constructor() {
-    super();
     this.tabs = CONFIG.tabs;
   }
 
   style() {
     return `
       #panels {
-        border-radius: 5px 0 0 5px;
         width: 90%;
         max-width: 1200px;
         height: 450px;
         margin: auto;
         background: #1e1e2e;
+        border-radius: 5px;
         box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
         transition: all 0.3s ease;
       }
+
       #panels:hover {
         transform: translateY(-2px);
         box-shadow: 0 15px 30px rgba(0, 0, 0, .3);
       }
 
-      .categories {
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-        position: relative;
-      }
       .categories ul {
         width: 100%;
         height: 107%;
-        right: 100%;
-        background: #1e1e2e url("../img/bg-1.gif") no-repeat left;
         background-size: cover;
         transition: all .6s;
+        animation: zoomEffect 20s ease-in-out infinite, scroll 5s ease-in-out infinite;
       }
+
+      @keyframes scroll {
+        50% { background-position-x: -20px; }
+      }
+
+      @keyframes zoomEffect {
+        0%, 100% { background-size: 100%; }
+        50% { background-size: 120%; }
+      }
+
       .categories ul[active] {
         right: 0;
         z-index: 1;
@@ -92,15 +94,51 @@ class Tabs extends Component {
       .categories .links {
         width: 70%;
         height: 100%;
-        background: linear-gradient(135deg, #1d013b, #2a264b, #4845a3, #1d013b);
+        background: linear-gradient(135deg, rgba(29, 1, 59, 1) 0%, rgba(72, 69, 163, 1) 66%, rgba(29, 1, 59, 1) 100%);
         background-size: 400% 400%;
         animation: flowingGradient 15s ease infinite;
-        backdrop-filter: blur(10px);
         padding: 5%;
-        flex-wrap: wrap;
         overflow-y: hidden;
-        scrollbar-width: none;
+        backdrop-filter: blur(50px);
+        transition: background 0.3s ease;
       }
+
+      @keyframes flowingGradient {
+        0%, 100% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+      }
+
+      .categories .links a {
+        color: #cdd6f4;
+        text-decoration: none;
+        font: 700 18px JetBrainsMono Nerd Font;
+        display: inline-flex;
+        align-items: center;
+        padding: 0.4em 0.7em;
+        background: rgba(24, 24, 37, 0.8);
+        box-shadow: 0 4px rgba(24, 24, 37, 0.5), 0 5px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 2px;
+        margin-bottom: 0.7em;
+        transition: all 0.2s;
+      }
+
+      .categories .links a:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 0 10px var(--flavour), 0 0 20px var(--flavour);
+        color: var(--flavour);
+      }
+
+      .categories .link-info {
+        display: inline-flex;
+        animation: fadeIn 0.5s ease-out forwards;
+        opacity: 0;
+      }
+
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+
       .categories .links li h1 {
         color: #cdd6f4;
         opacity: 0.5;
@@ -110,42 +148,12 @@ class Tabs extends Component {
         letter-spacing: 1px;
         text-transform: uppercase;
       }
-      .categories .links a {
-        color: #cdd6f4;
-        text-decoration: none;
-        font: 700 18px JetBrainsMono Nerd Font;
-        display: inline-flex;
-        align-items: center;
-        padding: .4em .7em;
-        background: rgba(24, 24, 37, 0.8);
-        box-shadow: 0 4px rgba(24, 24, 37, 0.5), 0 5px 10px rgba(0, 0, 0, 0.2);
-        border-radius: 2px;
-        margin-bottom: .7em;
-      }
-      .categories .links a:hover {
-        transform: translate(0, 4px);
-        box-shadow: 0 0 5px var(--flavour), 0 0 10px var(--flavour);
-        color: var(--flavour);
-      }
-      .link-info {
-        animation: fadeIn 0.5s ease-out forwards;
-        opacity: 0;
-      }
-      @keyframes flowingGradient {
-        0% { background-position: 0% 50%; }
-        50% { background-position: 100% 50%; }
-        100% { background-position: 0% 50%; }
-      }
-      @keyframes fadeIn {
-        from { opacity: 0; transform: translateY(10px); }
-        to { opacity: 1; transform: translateY(0); }
-      }
     `;
   }
 
   template() {
     return `
-      <div id="links">
+      <div id="links" class="-">
         <div id="panels">
           <div class="categories">
             ${Category.getAll(this.tabs)}
