@@ -43,12 +43,6 @@ const default_config = {
         name: "Media",
         links: [
           {
-            name: "bilibili",
-            url: "https://www.bilibili.com",
-            icon: "brand-bilibili",
-            icon_color: "#7dcfff",
-          },
-          {
             name: "youtube",
             url: "https://www.youtube.com/",
             icon: "brand-youtube-filled",
@@ -58,7 +52,7 @@ const default_config = {
             name: "ns",
             url: "https://www.nodeseek.com/?sortBy=postTime",
             icon: "server-2",
-            icon_color: "#73daca",
+            icon_color: "#7dcfff",
           },
           {
             name: "linuxdo",
