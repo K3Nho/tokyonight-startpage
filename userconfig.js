@@ -81,7 +81,7 @@ const default_config = {
             name: "github",
             url: "https://github.com/",
             icon: "brand-github",
-            icon_color: "#7dcfff",
+            icon_color: "#7aa2f7",
           },
           {
             name: "gmail",
@@ -110,7 +110,7 @@ const default_config = {
             name: "coinmarketcap",
             url: "https://coinmarketcap.com/zh",
             icon: "brand-coinbase",
-            icon_color: "#7dcfff",
+            icon_color: "#7aa2f7",
           },
           {
             name: "binance",
