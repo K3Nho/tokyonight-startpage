@@ -64,7 +64,7 @@ const default_config = {
             name: "linuxdo",
             url: "https://linux.do/new",
             icon: "brand-debian",
-            icon_color: "#ff9e64",
+            icon_color: "#e0af68",
           },
           {
             name: "v2ex",
@@ -93,7 +93,7 @@ const default_config = {
             name: "qmail",
             url: "https://mail.qq.com",
             icon: "mail",
-            icon_color: "#ff9e64",
+            icon_color: "#e0af68",
           },
           {
             name: "gpt",
