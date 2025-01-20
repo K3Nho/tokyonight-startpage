@@ -64,7 +64,7 @@ const default_config = {
             name: "linuxdo",
             url: "https://linux.do/new",
             icon: "brand-debian",
-            icon_color: "#e0af68",
+            icon_color: "#ff9e64",
           },
           {
             name: "v2ex",
@@ -93,7 +93,7 @@ const default_config = {
             name: "qmail",
             url: "https://mail.qq.com",
             icon: "mail",
-            icon_color: "#e0af68",
+            icon_color: "#7dcfff",
           },
           {
             name: "gpt",
@@ -116,7 +116,7 @@ const default_config = {
             name: "binance",
             url: "https://www.binance.com/zh-CN/my/wallet/account/overview",
             icon: "brand-binance",
-            icon_color: "#e0af68",
+            icon_color: "#ff9e64",
           },
           {
             name: "okx",
