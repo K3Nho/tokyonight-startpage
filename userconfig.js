@@ -116,7 +116,7 @@ const default_config = {
             name: "binance",
             url: "https://www.binance.com/zh-CN/my/wallet/account/overview",
             icon: "brand-binance",
-            icon_color: "#ff9e64",
+            icon_color: "#e0af68",
           },
           {
             name: "okx",
