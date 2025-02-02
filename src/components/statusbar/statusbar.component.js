@@ -102,7 +102,7 @@ class Statusbar extends Component {
         <div id="tabs">
             <cols>
                 <button class="+ fastlink">
-                  <img class="fastlink-icon" src="src/img/qb.png"/>
+                  <img class="fastlink-icon" src="src/img/qb.svg"/>
                 </button>
                 <div class="+ widgets col-end">
                     <current-time class="+ widget"></current-time>
