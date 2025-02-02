@@ -119,6 +119,12 @@ const default_config = {
             icon_color: "#e0af68",
           },
           {
+            name: "bybit",
+            url: "https://www.bybit.com/cards/dashboard",
+            icon: "currency-bitcoin",
+            icon_color: "#7dcfff",
+          },
+          {
             name: "okx",
             url: "https://www.okx.com/zh-hans/balance/funding",
             icon: "currency-ethereum",
