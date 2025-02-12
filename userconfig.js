@@ -97,7 +97,7 @@ const default_config = {
           },
           {
             name: "gpt",
-            url: "https://chat.lmsys.org/?leaderboard",
+            url: "https://lmarena.ai",
             icon: "brand-twitch",
             icon_color: "#bb9af7",
           },
