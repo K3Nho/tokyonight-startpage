@@ -44,7 +44,7 @@ const default_config = {
         links: [
           {
             name: "youtube",
-            url: "https://www.youtube.com/",
+            url: "https://www.youtube.com",
             icon: "brand-youtube-filled",
             icon_color: "#f7768e",
           },
@@ -55,21 +55,15 @@ const default_config = {
             icon_color: "#7aa2f7",
           },
           {
-            name: "ns",
-            url: "https://www.nodeseek.com/?sortBy=postTime",
-            icon: "server-2",
+            name: "bilibili,
+            url: "https://bilibili.com",
+            icon: "brand-bilibili",
             icon_color: "#7dcfff",
           },
           {
-            name: "linuxdo",
-            url: "https://linux.do/new",
-            icon: "brand-debian",
-            icon_color: "#73daca",
-          },
-          {
-            name: "v2ex",
-            url: "https://v2ex.com/?tab=hot",
-            icon: "code",
+            name: "ns",
+            url: "https://www.nodeseek.com/?sortBy=postTime",
+            icon: "server-2",
             icon_color: "#bb9af7",
           },
         ],
