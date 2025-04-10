@@ -55,7 +55,7 @@ const default_config = {
             icon_color: "#7aa2f7",
           },
           {
-            name: "bilibili,
+            name: "bilibili",
             url: "https://bilibili.com",
             icon: "brand-bilibili",
             icon_color: "#7dcfff",
