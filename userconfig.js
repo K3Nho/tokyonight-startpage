@@ -33,7 +33,7 @@ const default_config = {
     "q": "config-tab",
   },
   disabled: [],
-  fastlink: "http://192.168.1.1:8080",
+  fastlink: "",
   openLastVisitedTab: true,
   tabs: [
     {
@@ -90,7 +90,7 @@ const default_config = {
             icon_color: "#7dcfff",
           },
           {
-            name: "gpt",
+            name: "grok",
             url: "https://grok.com",
             icon: "brand-openai",
             icon_color: "#bb9af7",
