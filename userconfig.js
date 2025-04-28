@@ -91,8 +91,8 @@ const default_config = {
           },
           {
             name: "gpt",
-            url: "https://lmarena.ai",
-            icon: "brand-twitch",
+            url: "https://grok.com",
+            icon: "brand-openai",
             icon_color: "#bb9af7",
           },
         ],
