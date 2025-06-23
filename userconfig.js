@@ -44,7 +44,7 @@ const default_config = {
         links: [
           {
             name: "youtube",
-            url: "https://www.youtube.com",
+            url: "https://youtube.com",
             icon: "brand-youtube-filled",
             icon_color: "#f7768e",
           },
@@ -73,13 +73,13 @@ const default_config = {
             links: [
           {
             name: "github",
-            url: "https://github.com/",
+            url: "https://github.com",
             icon: "brand-github",
             icon_color: "#7aa2f7",
           },
           {
             name: "gmail",
-            url: "https://mail.google.com/",
+            url: "https://mail.google.com",
             icon: "brand-gmail",
             icon_color: "#f7768e",
           },
@@ -114,7 +114,7 @@ const default_config = {
           },
           {
             name: "okx",
-            url: "https://www.okx.com/zh-hans/balance/funding",
+            url: "https://www.okx.com/zh-hans/balance/overview",
             icon: "currency-ethereum",
             icon_color: "#7dcfff",
           },
