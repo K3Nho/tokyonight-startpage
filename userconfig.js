@@ -43,16 +43,16 @@ const default_config = {
         name: "Media",
         links: [
           {
-            name: "youtube",
-            url: "https://youtube.com",
-            icon: "brand-youtube-filled",
-            icon_color: "#f7768e",
-          },
-          {
             name: "𝕩",
             url: "https://x.com",
             icon: "brand-x",
             icon_color: "#7aa2f7",
+          },
+          {
+            name: "youtube",
+            url: "https://youtube.com",
+            icon: "brand-youtube-filled",
+            icon_color: "#f7768e",
           },
           {
             name: "bilibili",
