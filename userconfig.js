@@ -33,7 +33,7 @@ const default_config = {
     "q": "config-tab",
   },
   disabled: [],
-  fastlink: "http://192.168.1.1/ariang/#!/downloading",
+  fastlink: "http://192.168.1.1:8080",
   openLastVisitedTab: true,
   tabs: [
     {
