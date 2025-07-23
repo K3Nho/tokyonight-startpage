@@ -15,8 +15,8 @@ h5,
 h6,
 p,
 span {
-  font-family: CaskaydiaCove Nerd Font;
-  src: url(../fonts/CaskaydiaCoveNerdFont.ttf);
+  font-family: Hack Nerd Font;
+  src: url(../fonts/HackNerdFont.ttf);
 }
 
 .\+ {
