@@ -15,8 +15,8 @@ h5,
 h6,
 p,
 span {
-  font-family: Inter Display Font;
-  src: url(../fonts/Inter.ttf);
+  font-family: JetBrainsMono Nerd Font;
+  src: url(../fonts/JetBrainsMonoNerdFont.ttf);
 }
 
 .\+ {
