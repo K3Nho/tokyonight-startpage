@@ -121,7 +121,7 @@ const default_config = {
           {
             name: "x-launch",
             url: "https://web3.okx.com/zh-hans/boost/x-launch",
-            icon: "currency-xrp",
+            icon: "brand-x",
             icon_color: "#bb9af7",
           },
           ],
