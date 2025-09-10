@@ -119,9 +119,9 @@ const default_config = {
             icon_color: "#7dcfff",
           },
           {
-            name: "bybit",
-            url: "https://www.bybit.com/cards/dashboard",
-            icon: "currency-bitcoin",
+            name: "x-launch",
+            url: "https://web3.okx.com/zh-hans/boost/x-launch",
+            icon: "currency-xrp",
             icon_color: "#bb9af7",
           },
           ],
