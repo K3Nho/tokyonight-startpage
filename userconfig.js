@@ -63,7 +63,7 @@ const default_config = {
           {
             name: "ns",
             url: "https://www.nodeseek.com/?sortBy=postTime",
-            icon: "server-2",
+            icon: "brand-debian",
             icon_color: "#bb9af7",
           },
         ],
@@ -119,9 +119,9 @@ const default_config = {
             icon_color: "#7dcfff",
           },
           {
-            name: "x-launch",
-            url: "https://web3.okx.com/zh-hans/boost/x-launch",
-            icon: "brand-x",
+            name: "alpha",
+            url: "https://web3.binance.com/zh-CN/markets/trending?chain=bsc",
+            icon: "brand-binance",
             icon_color: "#bb9af7",
           },
           ],
