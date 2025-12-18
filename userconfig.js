@@ -33,7 +33,7 @@ const default_config = {
     "q": "config-tab",
   },
   disabled: [],
-  fastlink: "http://192.168.1.1/ariang/#!/downloading",
+  fastlink: "",
   openLastVisitedTab: true,
   tabs: [
     {
@@ -90,9 +90,9 @@ const default_config = {
             icon_color: "#7dcfff",
           },
           {
-            name: "gpt",
-            url: "https://lmarena.ai/?mode=direct",
-            icon: "brand-openai",
+            name: "gemini",
+            url: "https://gemini.google.com/app",
+            icon: "brand-google",
             icon_color: "#bb9af7",
           },
         ],
