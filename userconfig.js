@@ -87,7 +87,7 @@ const default_config = {
             name: "goofish",
             url: "https://www.goofish.com",
             icon: "fish",
-            icon_color: "#7dcfff",
+            icon_color: "#e0af68",
           },
           {
             name: "gemini",
