@@ -84,9 +84,9 @@ const default_config = {
             icon_color: "#f7768e",
           },
           {
-            name: "qmail",
-            url: "https://mail.qq.com",
-            icon: "mail",
+            name: "goofish",
+            url: "https://www.goofish.com",
+            icon: "fish",
             icon_color: "#7dcfff",
           },
           {
