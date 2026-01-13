@@ -93,6 +93,12 @@ const default_config = {
             name: "gemini",
             url: "https://gemini.google.com/app",
             icon: "brand-google",
+            icon_color: "#7dcfff",
+          },
+          {
+            name: "chatgpt",
+            url: "https://chatgpt.com",
+            icon: "brand-openai",
             icon_color: "#bb9af7",
           },
         ],
