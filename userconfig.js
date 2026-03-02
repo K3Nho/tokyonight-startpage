@@ -50,7 +50,7 @@ const default_config = {
           },
           {
             name: "youtube",
-            url: "https://youtube.com",
+            url: "https://www.youtube.com/feed/subscriptions",
             icon: "brand-youtube-filled",
             icon_color: "#f7768e",
           },
