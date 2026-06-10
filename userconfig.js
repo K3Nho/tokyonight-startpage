@@ -119,9 +119,9 @@ const default_config = {
             icon_color: "#7dcfff",
           },
           {
-            name: "alpha",
-            url: "https://web3.binance.com/zh-CN/markets/trending?chain=bsc",
-            icon: "brand-binance",
+            name: "kraken",
+            url: "https://www.kraken.com/c",
+            icon: "brand-kick",
             icon_color: "#bb9af7",
           },
           ],
