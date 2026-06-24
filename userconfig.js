@@ -113,9 +113,9 @@ const default_config = {
             icon_color: "#e0af68",
           },
           {
-            name: "okx",
-            url: "https://www.okx.com/zh-hans/balance/overview",
-            icon: "currency-ethereum",
+            name: "Hyperliquid",
+            url: "https://app.hyperliquid.xyz/trade",
+            icon: "currency-dollar",
             icon_color: "#7dcfff",
           },
           {
