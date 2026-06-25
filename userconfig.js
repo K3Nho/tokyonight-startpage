@@ -92,7 +92,7 @@ const default_config = {
           {
             name: "gemini",
             url: "https://gemini.google.com/app",
-            icon: "brand-google",
+            icon: "brand-guardian",
             icon_color: "#bb9af7",
           },
         ],
@@ -101,28 +101,22 @@ const default_config = {
             name: "Crypto",
             links: [
           {
-            name: "coinmarketcap",
-            url: "https://coinmarketcap.com/zh",
-            icon: "brand-coinbase",
+            name: "hyperliquid",
+            url: "https://app.hyperliquid.xyz/trade",
+            icon: "brand-cashapp",
             icon_color: "#7aa2f7",
+          },
+          {
+            name: "bitget",
+            url: "https://www.bitget.com/zh-CN/spot/REWYUSDT",
+            icon: "brand-bebo",
+            icon_color: "#7dcfff",
           },
           {
             name: "binance",
             url: "https://www.binance.com/zh-CN/my/wallet/account/overview",
             icon: "brand-binance",
             icon_color: "#e0af68",
-          },
-          {
-            name: "Hyperliquid",
-            url: "https://app.hyperliquid.xyz/trade",
-            icon: "currency-dollar",
-            icon_color: "#7dcfff",
-          },
-          {
-            name: "kraken",
-            url: "https://www.kraken.com/c",
-            icon: "brand-kick",
-            icon_color: "#bb9af7",
           },
           ],
         },
