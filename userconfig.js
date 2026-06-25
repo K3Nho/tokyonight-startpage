@@ -109,7 +109,7 @@ const default_config = {
           {
             name: "bitget",
             url: "https://www.bitget.com/zh-CN/spot/REWYUSDT",
-            icon: "brand-beats",
+            icon: "brand-bebo",
             icon_color: "#7dcfff",
           },
           {
