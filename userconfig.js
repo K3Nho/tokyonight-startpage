@@ -92,7 +92,7 @@ const default_config = {
           {
             name: "gemini",
             url: "https://gemini.google.com/app",
-            icon: "brand-guardian",
+            icon: "brand-google",
             icon_color: "#bb9af7",
           },
         ],
@@ -109,7 +109,7 @@ const default_config = {
           {
             name: "bitget",
             url: "https://www.bitget.com/zh-CN/spot/REWYUSDT",
-            icon: "brand-bebo",
+            icon: "currency-bitcoin",
             icon_color: "#7dcfff",
           },
           {
