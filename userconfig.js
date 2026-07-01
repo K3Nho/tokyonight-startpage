@@ -104,13 +104,13 @@ const default_config = {
             name: "hyperliquid",
             url: "https://app.hyperliquid.xyz/trade",
             icon: "brand-cashapp",
-            icon_color: "#7aa2f7",
+            icon_color: "#7dcfff",
           },
           {
-            name: "bitget",
-            url: "https://www.bitget.com/zh-CN/spot/REWYUSDT",
-            icon: "currency-bitcoin",
-            icon_color: "#7dcfff",
+            name: "backpack",
+            url: "https://backpack.exchange/stocks",
+            icon: "backpack",
+            icon_color: "#f7768e",
           },
           {
             name: "binance",
