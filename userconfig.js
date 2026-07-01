@@ -98,7 +98,7 @@ const default_config = {
         ],
       },
           {
-            name: "$",
+            name: "Trade",
             links: [
           {
             name: "schwab",
