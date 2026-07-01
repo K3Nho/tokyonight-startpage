@@ -69,7 +69,7 @@ const default_config = {
         ],
       },
           {
-            name: "Workspace",
+            name: "Tools",
             links: [
           {
             name: "github",
@@ -98,12 +98,18 @@ const default_config = {
         ],
       },
           {
-            name: "Crypto",
+            name: "$",
             links: [
+          {
+            name: "schwab",
+            url: "https://trade.thinkorswim.com/charts",
+            icon: "brand-cashapp",
+            icon_color: "#7aa2f7",
+          },
           {
             name: "hyperliquid",
             url: "https://app.hyperliquid.xyz/trade",
-            icon: "brand-cashapp",
+            icon: "droplet",
             icon_color: "#7dcfff",
           },
           {
